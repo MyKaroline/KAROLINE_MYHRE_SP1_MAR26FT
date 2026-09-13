@@ -1,6 +1,7 @@
 :root {
 	--primary: #cb6ce6;
 	--light: #ffffff;
+	--blue: #0999b2;
 	--font-header: "Aldrich", "Courier New", sans-serif;
 	--font-body: "Inter", sans-serif;
 }
@@ -103,11 +104,61 @@ nav {
 	display: inline-block;
 	padding: 10px 16px;
 	border: 1px solid var(--primary);
+	color: white;
+	text-decoration: none;
+	background-color: var(--primary);
 	border-radius: 10px;
 }
 
 .btn:hover {
 	transition: all 0.15s ease-in-out;
+	color: var(--primary);
+	background-color: white;
+}
+
+.btn.cart-btn {
+	color: currentColor;
+	background-color: white;
+}
+
+.btn.cart-btn:hover {
+	color: white;
+	background-color: var(--primary);
+	text-decoration: none;
+}
+
+.center {
+	width: min-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid {
+	display: grid;
+	grid-auto-flow: row;
+	place-content: center;
+	grid-auto-columns: minmax(auto, 380px);
+	padding: 57px 74px;
+	column-gap: 74px;
+}
+
+.grid img {
+	grid-row: 1;
+	width: 100%;
+	height: 670px;
+	object-fit: cover;
+}
+
+.grid-text {
+	grid-row: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	text-align: center;
+	padding: 40px;
+	color: white;
+	background-color: #3b3930;
 }
 
 footer {
@@ -119,7 +170,7 @@ footer {
 		"tagline tagline tagline"
 		"links-a links-b links-c";
 	justify-content: space-between;
-	padding: 24px;
+	padding: 48px 24px;
 }
 
 footer .footer-header {
@@ -140,4 +191,12 @@ footer img {
 	grid-area: logo;
 	place-self: center;
 	height: 113px;
+}
+
+.bg-blue {
+	background-color: var(--blue);
+}
+
+.bg-primary {
+	background-color: var(--primary);
 }
