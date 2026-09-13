@@ -1,0 +1,143 @@
+:root {
+	--primary: #cb6ce6;
+	--light: #ffffff;
+	--font-header: "Aldrich", "Courier New", sans-serif;
+	--font-body: "Inter", sans-serif;
+}
+
+html {
+	font-family: var(--font-body);
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+body {
+	margin-top: 123px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: var(--font-header);
+	font-optical-sizing: auto;
+	letter-spacing: 0.1em;
+	font-style: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav {
+	padding: 7px 24px;
+	background-color: var(--light);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 50;
+}
+
+.header-logo {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.header-logo h1 {
+	font-size: 32px;
+}
+
+.header-logo img {
+	width: auto;
+	height: 106px;
+}
+
+.header-links {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	font-size: 20px;
+}
+
+.header-links a:hover:not(.btn) {
+	text-decoration: underline;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 16px;
+	border: 1px solid var(--primary);
+	border-radius: 10px;
+}
+
+.btn:hover {
+	transition: all 0.15s ease-in-out;
+}
+
+footer {
+	background-color: var(--light);
+	display: grid;
+	gap: 12px;
+	grid-template:
+		"logo logo logo"
+		"tagline tagline tagline"
+		"links-a links-b links-c";
+	justify-content: space-between;
+	padding: 24px;
+}
+
+footer .footer-header {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+footer h3 {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-family: var(--font-body);
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--primary);
+}
+
+footer img {
+	grid-area: logo;
+	place-self: center;
+	height: 113px;
+}
