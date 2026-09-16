@@ -2,6 +2,8 @@
 	--primary: #cb6ce6;
 	--light: #ffffff;
 	--blue: #0999b2;
+	--yellow: #ffde59;
+	--dark: #3b3930;
 
 	--font-header: "Aldrich", "Courier New", sans-serif;
 	--font-body: "Inter", sans-serif;
@@ -159,7 +161,7 @@ nav {
 	text-align: center;
 	padding: 40px;
 	color: black;
-	background-color: #ffde59;
+	background-color: var(--yellow);
 	border: 2px solid black;
 }
 
