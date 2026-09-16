@@ -1,0 +1,20 @@
+main {
+	padding-left: 92px;
+	padding-right: 92px;
+}
+
+main > * {
+	margin-top: 92px;
+}
+
+.for-section {
+	display: flex;
+	gap: 92px;
+}
+
+.for-section img {
+	flex-shrink: 0;
+	width: 455px;
+	height: 507px;
+	object-fit: cover;
+}
