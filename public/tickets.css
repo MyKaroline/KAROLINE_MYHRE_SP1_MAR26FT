@@ -1,0 +1,19 @@
+main {
+	padding-top: 112px;
+}
+
+.collage-text {
+	color: black;
+
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.collage-text p {
+	flex-grow: 1;
+}
