@@ -212,6 +212,7 @@ footer {
 		"links-a links-b links-c";
 	justify-content: space-between;
 	padding: 48px 24px;
+	border-top: 1px solid black;
 }
 
 footer .footer-header {
