@@ -23,7 +23,7 @@ main > * {
 	object-fit: cover;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 999px) {
 	:root {
 		--spacing: 24px;
 	}
@@ -47,5 +47,10 @@ main > * {
 	.for-section img {
 		width: 100vw;
 		height: 120vw;
+	}
+}
+@media (min-width: 1000px) {
+	main {
+		padding-bottom: var(--spacing);
 	}
 }
