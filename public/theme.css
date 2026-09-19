@@ -31,7 +31,7 @@ body {
 	min-height: 100vh;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 999px) {
 	body {
 		margin-top: 60px;
 	}
@@ -113,7 +113,7 @@ nav {
 	display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 999px) {
 	nav {
 		height: 60px;
 		padding-left: 10px;
@@ -274,7 +274,7 @@ nav {
 	border: 2px solid black;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 999px) {
 	.grid {
 		display: flex;
 		flex-direction: column;
@@ -350,7 +350,10 @@ nav {
 	font-size: 24px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 999px) {
+	.collage {
+		justify-content: center;
+	}
 }
 
 footer {

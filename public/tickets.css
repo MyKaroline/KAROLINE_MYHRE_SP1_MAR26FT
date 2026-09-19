@@ -1,5 +1,5 @@
 main {
-	padding-top: 112px;
+	padding: 112px 24px;
 }
 
 .collage-text {
@@ -18,9 +18,9 @@ main {
 	flex-grow: 1;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1130px) {
 	main {
-		padding-top: 0;
+		padding: 0;
 	}
 
 	.collage {
