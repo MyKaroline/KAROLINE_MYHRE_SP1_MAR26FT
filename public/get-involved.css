@@ -9,5 +9,22 @@ main > * {
 }
 
 section .btn {
+	display: block;
+	width: min-content;
+	white-space: nowrap;
 	margin-top: 34px;
+}
+
+@media (max-width: 750px) {
+	h2 {
+		font-size: 16px;
+	}
+	main {
+		padding: 24px;
+		font-size: 15px;
+	}
+
+	main > :first-child {
+		margin-top: 0;
+	}
 }

@@ -40,6 +40,13 @@
 	right: auto;
 }
 
+@media (max-width: 750px) {
+	.hero-text {
+		position: static;
+		width: 100%;
+	}
+}
+
 .gallery-images {
 	display: grid;
 	height: 50vw;
@@ -72,4 +79,26 @@
 
 .box > * {
 	margin: 0;
+}
+
+@media (max-width: 750px) {
+	.with-box .gallery-images {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.with-box .gallery-images > .box {
+		order: 1;
+	}
+
+	.with-box .gallery-images > * {
+		aspect-ratio: 1 / 1;
+	}
+
+	.box {
+		padding: 20px;
+		line-height: 2;
+		font-size: 1.25rem;
+	}
 }

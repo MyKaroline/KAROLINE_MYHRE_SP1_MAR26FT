@@ -17,3 +17,20 @@ main {
 .collage-text p {
 	flex-grow: 1;
 }
+
+@media (max-width: 750px) {
+	main {
+		padding-top: 0;
+	}
+
+	.collage {
+		gap: 0;
+	}
+	.collage-item img {
+		max-height: 400px;
+	}
+
+	.collage-text {
+		border: none;
+	}
+}

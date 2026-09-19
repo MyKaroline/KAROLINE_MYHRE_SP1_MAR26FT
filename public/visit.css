@@ -34,3 +34,18 @@ h2 {
 ol {
 	font-weight: 500;
 }
+
+@media (max-width: 750px) {
+	h1,
+	h2 {
+		font-size: 16px;
+	}
+
+	main {
+		font-size: 15px;
+	}
+
+	section {
+		padding: 24px;
+	}
+}
