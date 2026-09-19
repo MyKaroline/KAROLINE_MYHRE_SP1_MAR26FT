@@ -1,15 +1,19 @@
+:root {
+	--spacing: 92px;
+}
+
 main {
-	padding-left: 92px;
-	padding-right: 92px;
+	padding-left: var(--spacing);
+	padding-right: var(--spacing);
 }
 
 main > * {
-	margin-top: 92px;
+	margin-top: var(--spacing);
 }
 
 .for-section {
 	display: flex;
-	gap: 92px;
+	gap: var(--spacing);
 }
 
 .for-section img {
@@ -17,4 +21,31 @@ main > * {
 	width: 455px;
 	height: 507px;
 	object-fit: cover;
+}
+
+@media (max-width: 750px) {
+	:root {
+		--spacing: 24px;
+	}
+
+	section,
+	.for-section > div {
+		padding-left: var(--spacing);
+		padding-right: var(--spacing);
+	}
+
+	main,
+	.for-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.for-section {
+		flex-direction: column;
+	}
+
+	.for-section img {
+		width: 100vw;
+		height: 120vw;
+	}
 }
