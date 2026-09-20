@@ -20,7 +20,7 @@ hr {
 	margin-bottom: 40px;
 }
 
-h1 {
+main h1 {
 	font-size: 40px;
 }
 
@@ -36,8 +36,8 @@ ol {
 }
 
 @media (max-width: 999px) {
-	h1,
-	h2 {
+	main h1,
+	main h2 {
 		font-size: 16px;
 	}
 
