@@ -7,6 +7,8 @@
 
 	--font-header: "Aldrich", "Courier New", sans-serif;
 	--font-body: "Inter", sans-serif;
+
+	--header-height: 123px;
 }
 
 html {
@@ -25,10 +27,10 @@ body {
 }
 
 body {
-	margin-top: 123px;
+	margin-top: var(--header-height);
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: calc(100vh - var(--header-height));
 }
 
 @media (max-width: 999px) {
@@ -70,7 +72,17 @@ button {
 	padding-left: 0;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 nav {
+	height: var(--header-height);
 	padding: 7px 24px;
 	background-color: var(--light);
 	display: flex;
@@ -89,7 +101,8 @@ nav {
 	text-transform: uppercase;
 }
 
-.header-logo h1 {
+.header-logo .header-text {
+	font-family: var(--font-header);
 	font-size: 32px;
 }
 
@@ -114,8 +127,11 @@ nav {
 }
 
 @media (max-width: 999px) {
+	:root {
+		--header-height: 60px;
+	}
+
 	nav {
-		height: 60px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -129,7 +145,7 @@ nav {
 		width: 37px;
 	}
 
-	.header-logo h1 {
+	.header-logo .header-text {
 		display: flex;
 		gap: 0.4em;
 		font-size: 10px;
