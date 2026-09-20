@@ -403,15 +403,6 @@ footer .footer-header {
 	text-transform: uppercase;
 }
 
-footer h2 {
-	margin-top: 0;
-	margin-bottom: 12px;
-	font-family: var(--font-body);
-	font-size: 20px;
-	font-weight: bold;
-	color: var(--primary);
-}
-
 footer img {
 	grid-area: logo;
 	place-self: center;
